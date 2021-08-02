@@ -7,17 +7,29 @@
   background: #272a31;
   color: #fff;
   display: flex;
-  padding: 10px 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 150px;
   font-family: sans-serif;
   justify-content: flex-end;
 }
 
 .nav-icons {
-  padding: 0 10px;
+  margin-right: 30px;
 }
 
 .nav-header-list li {
   float: left;
-  margin: 0 20px;
+  margin: 0 10px;
   list-style: none;
+}
+
+.nav-icons:hover {
+  color: #ec5242;
+  cursor: pointer;
+}
+
+.nav-header-list:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
