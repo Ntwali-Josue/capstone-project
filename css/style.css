@@ -29,7 +29,8 @@
   cursor: pointer;
 }
 
-.nav-header-list:hover {
+.nav-header-list li:hover {
   text-decoration: underline;
   cursor: pointer;
+  color: #ec5242;
 }
