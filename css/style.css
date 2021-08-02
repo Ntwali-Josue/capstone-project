@@ -1,4 +1,23 @@
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+.nav-header {
+  background: #272a31;
+  color: #fff;
+  display: flex;
+  padding: 10px 150px;
+  font-family: sans-serif;
+  justify-content: flex-end;
+}
+
+.nav-icons {
+  padding: 0 10px;
+}
+
+.nav-header-list li {
+  float: left;
+  margin: 0 20px;
+  list-style: none;
 }
