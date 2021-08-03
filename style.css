@@ -9,7 +9,7 @@
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-right: 150px;
+  padding-right: 230px;
   font-family: sans-serif;
   justify-content: flex-end;
 }
@@ -73,12 +73,67 @@
   right: 0;
   bottom: 0;
   opacity: 0.2;
-  z-index: 0;
   height: 400px;
 }
 
 .main {
   position: relative;
   color: #ec5242;
-  z-index: 1;
+}
+
+.welcome-heading {
+  font-size: 30px;
+}
+
+.main h1 {
+  font-size: 50px;
+}
+
+.heading-desc {
+  width: 500px;
+  color: #000;
+  background: #e6e6e6;
+  border: 1px solid #fff;
+  padding: 5px;
+}
+
+.date {
+  color: rgb(95, 95, 95);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.partners {
+  color: #000;
+}
+
+.stages {
+  background: url(./images/stages.jpg);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.first-stage {
+  width: 200px;
+  background-color: #242424;
+  color: #fff;
+  border: 1px solid #3b3b3b;
+  margin: 0 2px;
+  transition: all 0.5s ease-in-out;
+}
+
+.first-stage img {
+  width: 50%;
+}
+
+.first-stage h2 {
+  color: #ec5242;
+}
+
+.first-stage:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border: 1px #fff;
 }
