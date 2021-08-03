@@ -110,30 +110,36 @@
 .stages {
   background: url(./images/stages.jpg);
   text-align: center;
-  display: flex;
-  justify-content: center;
   padding: 50px 0;
 }
 
-.first-stage {
+.stages-title {
+  color: #fff;
+  font-size: 30px;
+  border-bottom: 1px solid #ec5242;
+  padding-bottom: 20px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.stage {
   width: 200px;
   background-color: #242424;
   color: #fff;
   border: 1px solid #3b3b3b;
   margin: 0 2px;
-  transition: all 0.5s ease-in-out;
+  padding: 20px;
 }
 
-.first-stage img {
-  width: 50%;
-}
-
-.first-stage h2 {
+.stage h2 {
   color: #ec5242;
+  margin: 20px 0;
 }
 
-.first-stage:hover {
-  transform: scale(1.1);
-  cursor: pointer;
-  border: 1px #fff;
+.stage:hover {
+  border: 1px solid #fff;
 }
