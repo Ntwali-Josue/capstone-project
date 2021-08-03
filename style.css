@@ -34,3 +34,23 @@
   cursor: pointer;
   color: #ec5242;
 }
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #e3e3e3;
+  box-shadow: 1px 1px #dbdbdb;
+  padding: 10px 0;
+  font-family: sans-serif;
+}
+
+.logo {
+  color: #ec5242;
+}
+
+.btn-header {
+  color: #ec5242;
+  background-color: #fff;
+  padding: 5px;
+  border: 5px solid #ec5242;
+}
