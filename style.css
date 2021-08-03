@@ -208,11 +208,13 @@
   font-size: 30px;
   font-family: sans-serif;
   border-bottom: 1px solid #ec5242;
+  padding-bottom: 10px;
 }
 
 .company-partners {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .company {
