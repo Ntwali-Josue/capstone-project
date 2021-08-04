@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+.nav-header {
+  background: #272a31;
+  color: #fff;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 230px;
+  font-family: sans-serif;
+  justify-content: flex-end;
+}
+
+.nav-icons {
+  margin-right: 30px;
+}
+
+.nav-header-list li {
+  float: left;
+  margin: 0 10px;
+  list-style: none;
+}
+
+.nav-icons:hover {
+  color: #ec5242;
+  cursor: pointer;
+}
+
+.nav-header-list li:hover {
+  cursor: pointer;
+  color: #ec5242;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #e3e3e3;
+  box-shadow: 1px 1px #dbdbdb;
+  padding: 10px 0;
+  font-family: sans-serif;
+}
+
+.logo {
+  color: #ec5242;
+}
+
+.btn-header {
+  color: #ec5242;
+  background-color: #fff;
+  padding: 5px;
+  border: 5px solid #ec5242;
+}
+
+.bg-main {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.bg-main::before {
+  content: "";
+  background: url("./images/bg-.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+}
+
+.main {
+  position: relative;
+  color: #ec5242;
+}
+
+.welcome-heading {
+  font-size: 30px;
+}
+
+.main h1 {
+  font-size: 50px;
+}
+
+.heading-desc {
+  width: 50%;
+  color: #000;
+  background: #fff;
+  border: 1px solid rgb(218, 218, 218);
+  padding: 50px 20px;
+  margin: auto 300px;
+  text-align: center;
+}
