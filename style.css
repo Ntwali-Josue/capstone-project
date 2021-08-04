@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+.menu {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
 .nav-header {
   background: #272a31;
   color: #fff;
@@ -30,7 +38,6 @@
 }
 
 .nav-header-list li:hover {
-  text-decoration: underline;
   cursor: pointer;
   color: #ec5242;
 }
@@ -112,6 +119,7 @@
   background: url(./images/stages.jpg);
   text-align: center;
   padding: 50px 0;
+  display: none;
 }
 
 .stages-title {
@@ -171,6 +179,10 @@
   margin: 50px;
 }
 
+.more-btn {
+  display: none;
+}
+
 .player {
   display: flex;
   width: 600px;
@@ -222,9 +234,116 @@
   padding: 0 20px;
 }
 
+.company img {
+  width: 100%;
+}
+
 .footer {
   margin: 50px;
   text-align: center;
   font-size: 24px;
   font-family: sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-header {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .bg-main {
+    width: 91%;
+  }
+
+  .main h1 {
+    font-size: 25px;
+  }
+
+  .date {
+    font-size: 20px;
+  }
+
+  .welcome-heading {
+    width: 70%;
+  }
+
+  .heading-desc {
+    width: 90%;
+  }
+
+  .featured {
+    display: grid;
+    grid-template-columns: 100%;
+    margin: 0;
+  }
+
+  .player {
+    display: flex;
+    width: 90%;
+    padding: 20px;
+    justify-content: center;
+  }
+
+  .player-desc {
+    width: 300px;
+    text-align: justify;
+    padding-left: 20px;
+  }
+
+  .player-desc h4 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+
+  .more-btn {
+    width: 80%;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-left: 10%;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+  }
+
+  .more-btn:hover {
+    cursor: pointer;
+  }
+
+  .more {
+    display: none;
+  }
+
+  .more-btn i {
+    color: #ec5242;
+    font-size: 30px;
+  }
+
+  .companies {
+    width: 100%;
+  }
+
+  .company-partners {
+    justify-content: left;
+  }
+
+  .company {
+    padding: 0 5px;
+  }
+
+  .company img {
+    width: 100%;
+  }
+
+  .footer {
+    font-size: 18px;
+  }
 }
