@@ -116,7 +116,6 @@
   padding: 50px 20px;
   text-align: center;
   margin: auto 25%;
-  border-bottom: 2px solid #272a31;
 }
 
 .logo-title {
@@ -134,5 +133,61 @@
 .logo-container {
   border: 2px solid #e6e6e6;
   padding: 50px 0;
-  margin:  0 50px;
+  margin: 0 50px;
+}
+
+.past-games {
+  padding: 50px 20px;
+  text-align: center;
+  margin: auto 25%;
+}
+
+.past-games-title {
+  font-size: 30px;
+  font-family: sans-serif;
+  border-bottom: 1px solid #ec5242;
+  padding-bottom: 10px;
+}
+
+.take-look {
+  margin-top: 30px;
+}
+
+.past-competitions {
+  display: flex;
+}
+
+.games-container {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.games-container::before {
+  content: "";
+  background: #464646;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+}
+
+.year {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.games-container p {
+  position: relative;
 }
