@@ -51,8 +51,9 @@
   font-family: sans-serif;
 }
 
-.logo {
+.logo a {
   color: #ec5242;
+  text-decoration: none;
 }
 
 .btn-header {
@@ -190,4 +191,14 @@
 
 .games-container p {
   position: relative;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 50px 0;
+  text-align: center;
+  font-size: 24px;
+  font-family: sans-serif;
+  background-color: #272a31;
+  color: #fff;
 }
