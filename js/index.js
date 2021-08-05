@@ -45,6 +45,22 @@ const players = [
     tenetur eius maxime voluptate id, ut doloribus ullam ea quas\
     recusandae facilis enim.',
   },
+  {
+    imgURL: '../images/profile-picture.jpg',
+    playerName: 'KARANGWA Ntwali Josue',
+    playerLocation: 'Rwanda, Kigali',
+    playerBio: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut\
+    tenetur eius maxime voluptate id, ut doloribus ullam ea quas\
+    recusandae facilis enim.',
+  },
+  {
+    imgURL: '../images/profile-picture.jpg',
+    playerName: 'KARANGWA Ntwali Josue',
+    playerLocation: 'Rwanda, Kigali',
+    playerBio: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut\
+    tenetur eius maxime voluptate id, ut doloribus ullam ea quas\
+    recusandae facilis enim.',
+  },
 ];
 
 const playerSection = document.createElement('div');
