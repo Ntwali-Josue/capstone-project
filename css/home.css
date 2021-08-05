@@ -1,3 +1,11 @@
+@import url("//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "Cocogoose Pro trial";
+  src: url("../fonts/Cocogoose\ Pro-trial.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -177,6 +185,11 @@
   font-family: sans-serif;
 }
 
+#player-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .featured-title {
   font-size: 30px;
 }
@@ -187,10 +200,8 @@
   background-color: #ec5242;
 }
 
-.featured {
+.featured-players {
   display: grid;
-  grid-template-columns: 50% 50%;
-  margin: 50px;
 }
 
 .more-btn {
@@ -210,17 +221,17 @@
   padding-left: 20px;
 }
 
-.player-desc h4 {
+.player-name {
   font-size: 20px;
   padding-bottom: 10px;
 }
 
-.location {
+.player-location {
   color: #ec5242;
   padding-bottom: 15px;
 }
 
-.player-desc span {
+.player-bio {
   color: #3b3b3b;
 }
 
@@ -259,6 +270,15 @@
   font-family: sans-serif;
 }
 
+.nav {
+  display: none;
+  background: #000;
+  padding-top: 20px;
+  color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-header {
     display: none;
@@ -276,6 +296,36 @@
   .bg-main {
     width: 90%;
     padding-left: 10%;
+  }
+
+  .menu-list {
+    display: block;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 30px;
+    min-height: 100vh;
+  }
+
+  .nav ul li {
+    list-style: none;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 3rem;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
   }
 
   .main h1 {
@@ -317,24 +367,28 @@
     width: 90%;
   }
 
-  .featured-section {
-    width: 100%;
-  }
-
   .featured {
-    display: grid;
-    grid-template-columns: 100%;
+    display: flex;
+    /* grid-template-columns: 100%; */
     margin: 0;
     text-align: justify;
     justify-content: left;
     grid-row-start: auto;
   }
 
+  #player-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: flex-start;
+  }
+
   .player {
     display: flex;
-    width: 90%;
+    width: 75%;
     padding: 20px;
     justify-content: center;
+    float: left;
   }
 
   .player-desc {
@@ -343,7 +397,7 @@
     padding-left: 20px;
   }
 
-  .player-desc h4 {
+  .player-name {
     font-size: 20px;
     padding-bottom: 10px;
   }
