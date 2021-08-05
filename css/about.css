@@ -74,7 +74,7 @@
 
 .bg-main::before {
   content: "";
-  background: url("./images/bg-.jfif");
+  background: url('/images/bg-cards1.jfif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -122,8 +122,12 @@
 .logo-title {
   font-size: 30px;
   font-family: sans-serif;
-  border-bottom: 1px solid #ec5242;
-  padding-bottom: 10px;
+}
+
+.logo-title hr {
+  width: 5%;
+  margin: 10px 50%;
+  background-color: #ec5242;
 }
 
 .logo-text {
@@ -146,8 +150,12 @@
 .past-games-title {
   font-size: 30px;
   font-family: sans-serif;
-  border-bottom: 1px solid #ec5242;
-  padding-bottom: 10px;
+}
+
+.past-games-title hr {
+  width: 5%;
+  margin: 10px 50%;
+  background-color: #ec5242;
 }
 
 .take-look {
@@ -167,11 +175,12 @@
   color: #fff;
   width: 300px;
   margin-right: 20px;
+  opacity: 0.9;
 }
 
 .games-container::before {
   content: "";
-  background: #464646;
+  background: url('/images/past-games.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -180,7 +189,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.3;
 }
 
 .year {
@@ -201,4 +209,74 @@
   font-family: sans-serif;
   background-color: #272a31;
   color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-header {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .bg-main {
+    width: 94%;
+    text-align: left;
+    padding: 10px 10px;
+  }
+
+  .main {
+    text-align: center;
+  }
+
+  .main h1 {
+    font-size: 20px;
+  }
+
+  .heading-desc {
+    width: 94%;
+    padding: 20px 10px;
+    margin: 20px 0;
+  }
+
+  .page-logo {
+    padding: 20px 10px;
+    text-align: center;
+    margin: auto 25%;
+  }
+
+  .logo-title {
+    font-size: 20px;
+  }
+
+  .logo-text {
+    margin: 15px 0;
+  }
+
+  .logo-container {
+    border: 2px solid #e6e6e6;
+    padding: 50px 0;
+    margin: 0 25px;
+  }
+
+  .past-competitions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .past-games-title {
+    font-size: 15px;
+  }
+
+  .games-container {
+    width: 100%;
+  }
 }
