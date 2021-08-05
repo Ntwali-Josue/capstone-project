@@ -98,6 +98,11 @@
   right: 0;
   bottom: 0;
   opacity: 0.2;
+  z-index: -1;
+}
+
+.menu-section {
+  display: none;
 }
 
 .main {
@@ -272,9 +277,8 @@
 
 .nav {
   display: none;
-  background: #000;
   padding-top: 20px;
-  color: #fff;
+  color: #000;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -302,10 +306,18 @@
     display: block;
   }
 
+  .menu-section {
+    display: block;
+    background: url('../images/menu-section.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+  }
+
   .nav ul {
     display: flex;
     flex-direction: column;
-    color: #fff;
     margin-bottom: 30px;
     min-height: 100vh;
   }
@@ -322,7 +334,7 @@
   }
 
   .nav ul li a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 24px;
     font-weight: 500;
@@ -369,7 +381,7 @@
 
   .featured {
     display: flex;
-    /* grid-template-columns: 100%; */
+    grid-template-columns: 100%;
     margin: 0;
     text-align: justify;
     justify-content: left;
@@ -385,16 +397,13 @@
 
   .player {
     display: flex;
-    width: 75%;
-    padding: 20px;
-    justify-content: center;
-    float: left;
+    width: 90%;
   }
 
   .player-desc {
-    width: 300px;
+    width: 100%;
     text-align: justify;
-    padding-left: 20px;
+    padding-left: 10px;
   }
 
   .player-name {
