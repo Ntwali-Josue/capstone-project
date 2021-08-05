@@ -69,7 +69,6 @@
   padding-bottom: 50px;
   padding-left: 50px;
   text-align: center;
-  background-color: #dbdbdb;
 }
 
 .bg-main::before {
@@ -84,6 +83,11 @@
   right: 0;
   bottom: 0;
   opacity: 0.2;
+  z-index: -1;
+}
+
+.menu-section {
+  display: none;
 }
 
 .main {
@@ -211,6 +215,14 @@
   color: #fff;
 }
 
+.nav {
+  display: none;
+  padding-top: 20px;
+  color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media only screen and (max-width: 768px) {
   .nav-header {
     display: none;
@@ -228,9 +240,48 @@
   }
 
   .bg-main {
-    width: 94%;
+    width: 97%;
     text-align: left;
     padding: 10px 10px;
+  }
+
+  .menu-list {
+    display: block;
+  }
+
+  .menu-section {
+    display: block;
+    width: 94%;
+    background: url('../images/about-menu-section.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    min-height: 100vh;
+  }
+
+  .nav ul li {
+    list-style: none;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 3rem;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
   }
 
   .main {
@@ -250,7 +301,7 @@
   .page-logo {
     padding: 20px 10px;
     text-align: center;
-    margin: auto 25%;
+    margin: 0;
   }
 
   .logo-title {
@@ -264,7 +315,7 @@
   .logo-container {
     border: 2px solid #e6e6e6;
     padding: 50px 0;
-    margin: 0 25px;
+    width: 80%;
   }
 
   .past-competitions {
