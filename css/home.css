@@ -32,12 +32,21 @@
   list-style: none;
 }
 
+.more-stages a {
+  color: #fff;
+}
+
+.nav-header-list li a {
+  color: #000;
+  text-decoration: none;
+}
+
 .nav-icons:hover {
   color: #ec5242;
   cursor: pointer;
 }
 
-.nav-header-list li:hover {
+.nav-header-list li a:hover:active {
   cursor: pointer;
   color: #ec5242;
 }
@@ -71,7 +80,7 @@
 
 .bg-main::before {
   content: "";
-  background: url("./images/bg-cards1.jfif");
+  background: url('/images/bg-cards1.jfif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -101,7 +110,8 @@
   color: #000;
   background: #e6e6e6;
   border: 1px solid #fff;
-  padding: 5px;
+  padding: 10px;
+  margin: 20px 0;
 }
 
 .date {
@@ -116,17 +126,20 @@
 }
 
 .stages {
-  background: url(./images/stages.jpg);
+  background: url('/images/stages.jpg');
   text-align: center;
   padding: 50px 0;
-  display: none;
 }
 
 .stages-title {
   color: #fff;
   font-size: 30px;
-  border-bottom: 1px solid #ec5242;
-  padding-bottom: 20px;
+}
+
+.stages-title hr {
+  width: 3%;
+  margin: 10px 48%;
+  background-color: #ec5242;
 }
 
 .flex {
@@ -158,10 +171,6 @@
   border: 1px solid #fff;
 }
 
-.more-stages a {
-  color: #fff;
-}
-
 .featured-section {
   text-align: center;
   margin: 50px 0;
@@ -170,7 +179,12 @@
 
 .featured-title {
   font-size: 30px;
-  border-bottom: 1px solid #ec5242;
+}
+
+.featured-title hr {
+  width: 3%;
+  margin: 10px 48%;
+  background-color: #ec5242;
 }
 
 .featured {
@@ -239,7 +253,7 @@
 }
 
 .footer {
-  margin: 50px;
+  margin: 50px 0;
   text-align: center;
   font-size: 24px;
   font-family: sans-serif;
@@ -260,11 +274,35 @@
   }
 
   .bg-main {
-    width: 91%;
+    width: 90%;
+    padding-left: 10%;
   }
 
   .main h1 {
     font-size: 25px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  .stage {
+    width: 90%;
+    display: flex;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .lg-title {
+    width: 30%;
+  }
+
+  .stage p {
+    width: 60%;
+    text-align: justify;
   }
 
   .date {
@@ -279,10 +317,17 @@
     width: 90%;
   }
 
+  .featured-section {
+    width: 100%;
+  }
+
   .featured {
     display: grid;
     grid-template-columns: 100%;
     margin: 0;
+    text-align: justify;
+    justify-content: left;
+    grid-row-start: auto;
   }
 
   .player {
@@ -310,6 +355,7 @@
     font-size: 20px;
     font-family: sans-serif;
     margin-left: 10%;
+    padding: 10px 0;
     background: #fff;
     border: 1px solid #e0e0e0;
   }
