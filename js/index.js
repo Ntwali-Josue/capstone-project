@@ -56,7 +56,7 @@ const addPlayer = () => {
   playerSection.id = 'player-section';
   for (let i = 0; i < players.length; i += 1) {
     playerSection.innerHTML += '<section class=\'featured-players\'>'
-+ `<div class='player'>`
++ '<div class=\'player\'>'
 + `<img src='${players[i].imgURL}' width='150' alt='image'>`
 + '<div class=\'player-desc\'>'
 + `<h4 class='player-name'>${players[i].playerName}</h4>`
@@ -64,7 +64,7 @@ const addPlayer = () => {
 + '<hr>'
 + `<p class='player-bio'>${players[i].playerBio}</p>`
 + '</div>'
-+ `</div>`
++ '</div>'
 + '</section>';
   }
   console.log(playerSection.classList);
