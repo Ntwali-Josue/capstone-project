@@ -9,7 +9,7 @@ const toggleMenu = () => {
   menuList.classList.toggle('menu-list');
 };
 
-hamburger.addEventListener('click',toggleMenu);
+hamburger.addEventListener('click', toggleMenu);
 
 const players = [
   {
@@ -55,10 +55,10 @@ const playerSection = document.createElement('div');
 const addPlayer = () => {
   playerSection.id = 'player-section';
   for (let i = 0; i < players.length; i += 1) {
-    playerSection.innerHTML += "<section class='featured-players'>"
+    playerSection.innerHTML += '<section class=\'featured-players\'>'
 + `<div class='player'>`
 + `<img src='${players[i].imgURL}' width='150' alt='image'>`
-+ "<div class='player-desc'>"
++ '<div class=\'player-desc\'>'
 + `<h4 class='player-name'>${players[i].playerName}</h4>`
 + `<h5 class='player-location'>${players[i].playerLocation}</h5>`
 + '<hr>'
