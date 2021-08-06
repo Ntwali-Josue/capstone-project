@@ -32,12 +32,24 @@
   list-style: none;
 }
 
+.logo a {
+  color: #ec5242;
+  text-decoration: none;
+}
+
+.nav-header-list li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .nav-icons:hover {
   color: #ec5242;
   cursor: pointer;
 }
 
-.nav-header-list li:hover {
+.nav-header-list li a:hover {
   cursor: pointer;
   color: #ec5242;
 }
@@ -49,11 +61,6 @@
   box-shadow: 1px 1px #dbdbdb;
   padding: 10px 0;
   font-family: sans-serif;
-}
-
-.logo a {
-  color: #ec5242;
-  text-decoration: none;
 }
 
 .btn-header {

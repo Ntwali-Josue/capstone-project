@@ -40,6 +40,11 @@
   list-style: none;
 }
 
+.logo a {
+  color: #ec5242;
+  text-decoration: none;
+}
+
 .more-stages a {
   color: #fff;
 }
@@ -47,11 +52,18 @@
 .nav-header-list li a {
   color: #000;
   text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .nav-icons:hover {
   color: #ec5242;
   cursor: pointer;
+}
+
+.nav-header-list li a:hover {
+  cursor: pointer;
+  color: #ec5242;
 }
 
 .nav-header-list li a:hover:active {
@@ -257,15 +269,31 @@
 .company-partners {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .company {
-  padding: 0 20px;
+  padding: 0 30px;
+  display: flex;
+  font-size: 50px;
 }
 
-.company img {
-  width: 100%;
+.company h5 {
+  padding-left: 10px;
+}
+
+.google {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #a5a5a5;
+}
+
+.mozilla {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.naver {
+  font-family: inherit;
+  color: #a5a5a5;
 }
 
 .footer {
@@ -352,19 +380,29 @@
   }
 
   .stage {
-    width: 90%;
-    display: flex;
+    width: 85%;
+    display: grid;
+    grid-template-columns: 50% 50%;
     margin: 10px 0;
-    padding: 10px;
   }
 
   .lg-title {
-    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
   }
 
-  .stage p {
-    width: 60%;
+  .stage h2 {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .stage span {
+    margin: 0;
+    padding: 0;
     text-align: justify;
+    justify-content: flex-end;
   }
 
   .date {
@@ -446,6 +484,8 @@
 
   .company {
     padding: 0 5px;
+    width: 100%;
+    font-size: 5vw;
   }
 
   .company img {
