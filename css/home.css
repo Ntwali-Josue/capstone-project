@@ -126,8 +126,10 @@
   font-size: 30px;
 }
 
-.main h1 {
+.welcome-heading-title {
   font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 .heading-desc {
