@@ -80,7 +80,7 @@
 
 .bg-main::before {
   content: "";
-  background: url('/images/bg-cards1.jfif');
+  background: url('../images/bg-cards1.jfif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -196,7 +196,7 @@
 
 .games-container::before {
   content: "";
-  background: url('/images/past-games.jpg');
+  background: url('../images/past-games.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

@@ -100,7 +100,7 @@
 
 .bg-main::before {
   content: "";
-  background: url('/images/bg-cards1.jfif');
+  background: url('../images/bg-cards1.jfif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -153,7 +153,7 @@
 }
 
 .stages {
-  background: url('/images/stages.jpg');
+  background: url('../images/stages.jpg');
   text-align: center;
   padding: 50px 0;
 }
