@@ -1,0 +1,345 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+.nav-header {
+  background: #272a31;
+  color: #fff;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 230px;
+  font-family: sans-serif;
+  justify-content: flex-end;
+}
+
+.nav-icons {
+  margin-right: 30px;
+}
+
+.nav-header-list li {
+  float: left;
+  margin: 0 10px;
+  list-style: none;
+}
+
+.logo a {
+  color: #ec5242;
+  text-decoration: none;
+}
+
+.nav-header-list li a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.nav-icons:hover {
+  color: #ec5242;
+  cursor: pointer;
+}
+
+.nav-header-list li a:hover {
+  cursor: pointer;
+  color: #ec5242;
+}
+
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #e3e3e3;
+  box-shadow: 1px 1px #dbdbdb;
+  padding: 10px 0;
+  font-family: sans-serif;
+}
+
+.btn-header {
+  color: #ec5242;
+  background-color: #fff;
+  padding: 5px;
+  border: 5px solid #ec5242;
+}
+
+.bg-main {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.bg-main::before {
+  content: "";
+  background: url('../images/bg-cards1.jfif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.menu-section {
+  display: none;
+}
+
+.main {
+  position: relative;
+  color: #ec5242;
+}
+
+.welcome-heading {
+  font-size: 30px;
+}
+
+.welcome-heading-title {
+  font-size: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.heading-desc {
+  width: 50%;
+  color: #000;
+  background: #fff;
+  border: 1px solid rgb(218, 218, 218);
+  padding: 50px 20px;
+  margin: 50px 300px;
+  text-align: center;
+}
+
+.partners {
+  color: #000;
+}
+
+.page-logo {
+  padding: 50px 20px;
+  text-align: center;
+  margin: auto 25%;
+}
+
+.logo-title {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.logo-title hr {
+  width: 5%;
+  margin: 10px 50%;
+  background-color: #ec5242;
+}
+
+.logo-text {
+  color: #272a31;
+  margin: 30px 0;
+}
+
+.logo-container {
+  border: 2px solid #e6e6e6;
+  padding: 50px 0;
+  margin: 0 50px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.past-games {
+  padding: 50px 20px;
+  text-align: center;
+  margin: auto 25%;
+}
+
+.past-games-title {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.past-games-title hr {
+  width: 5%;
+  margin: 10px 50%;
+  background-color: #ec5242;
+}
+
+.take-look {
+  margin-top: 30px;
+}
+
+.past-competitions {
+  display: flex;
+}
+
+.games-container {
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  margin-top: 50px;
+  color: #fff;
+  width: 300px;
+  margin-right: 20px;
+  opacity: 0.9;
+}
+
+.games-container::before {
+  content: "";
+  background: url('../images/past-games.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.year {
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.games-container p {
+  position: relative;
+}
+
+.footer {
+  margin-top: 50px;
+  padding: 50px 0;
+  text-align: center;
+  font-size: 24px;
+  font-family: sans-serif;
+  background-color: #272a31;
+  color: #fff;
+}
+
+.nav {
+  display: none;
+  padding-top: 20px;
+  color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-header {
+    display: none;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .bg-main {
+    width: 97%;
+    text-align: left;
+    padding: 10px 10px;
+  }
+
+  .menu-list {
+    display: block;
+  }
+
+  .menu-section {
+    display: block;
+    width: 94%;
+    background: url('../images/about-menu-section.PNG');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+  }
+
+  .nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    min-height: 100vh;
+  }
+
+  .nav ul li {
+    list-style: none;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 3rem;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .main {
+    text-align: center;
+  }
+
+  .welcome-heading-title {
+    font-size: 20px;
+  }
+
+  .heading-desc {
+    width: 94%;
+    padding: 20px 10px;
+    margin: 20px 0;
+  }
+
+  .page-logo {
+    padding: 20px 10px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .logo-title {
+    font-size: 10px;
+  }
+
+  .logo-text {
+    margin: 15px 0;
+  }
+
+  .logo-container {
+    border: 2px solid #e6e6e6;
+    padding: 50px 0;
+    width: 80%;
+  }
+
+  .past-competitions {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .past-games-title {
+    font-size: 15px;
+  }
+
+  .games-container {
+    width: 100%;
+  }
+}
