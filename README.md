@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Capstone Porject
+# Capstone Project
 
 > Microverse first capstone project.
 
@@ -18,7 +18,7 @@ Playing cards website, where you can buy,sell and trade your favorites cards.
 
 ## Live Demo
 
-[Live Demo Link](https://ntwali-josue.github.io/Capstone-project/)
+[Live Demo Link](https://ntwali-josue.github.io/capstone-project/)
 
 ## Authors
 
