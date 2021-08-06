@@ -18,7 +18,7 @@ Playing cards website, where you can buy,sell and trade your favorites cards.
 
 ## Live Demo
 
-[Live Demo Link](https://ntwali-josue.github.io/capstone-project/)
+[Live Demo Link](https://ntwali-josue.github.io/capstone-project)
 
 ## Author
 
